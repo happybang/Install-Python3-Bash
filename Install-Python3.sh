@@ -39,6 +39,9 @@ if [ $key == 'Y' -o $key == 'y' ];then
 	echo -n "Linking....."
 	ln -s /usr/local/python3.5.1/bin/pip3  /usr/bin/pip3
 	ln -s /usr/local/python3.5.1/bin/python3.5 /usr/bin/python3 &> /dev/null && echo  -e   "[${green}Success${nc}]" || echo -e "[${red}Failed${nc}]"
+	echo "PATH=/usr/local/python3.5.1/bin/:\$PATH " >> /etc/profile
+	echo "PYTHONPATH=\$PYTHONPATH:/usr/local/python3.5.1/lib/python3.5/" >> /etc/profile
+	source /etc/profile
 	V3=`python3 -V | awk '{print $2}'`
 	echo "Python Version: $V3 "
 	echo "You can input \"python3\" to enter python 3.4.1 and input \"pip3\" to manage your python3 packages."
