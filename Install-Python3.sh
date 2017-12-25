@@ -44,6 +44,6 @@ if [ $key == 'Y' -o $key == 'y' ];then
 	source /etc/profile
 	V3=`python3 -V | awk '{print $2}'`
 	echo "Python Version: $V3 "
-	echo "You can input \"python3\" to enter python 3.4.1 and input \"pip3\" to manage your python3 packages."
+	echo "You can input \"python3\" to enter python 3.5.3 and input \"pip3\" to manage your python3 packages."
 fi
 
