@@ -40,7 +40,7 @@ if [ $key == 'Y' -o $key == 'y' ];then
 	ln -s /usr/local/python3.6.5/bin/pip3  /usr/bin/pip3
 	ln -s /usr/local/python3.6.5/bin/python3.6 /usr/bin/python3 &> /dev/null && echo  -e   "[${green}Success${nc}]" || echo -e "[${red}Failed${nc}]"
 	echo "PATH=/usr/local/python3.6.5/bin/:\$PATH " >> /etc/profile
-	echo "PYTHONPATH=\$PYTHONPATH:/usr/local/python3.6.5/lib/python3.6/" >> /etc/profile
+	echo "PYTHONPATH=/usr/local/python3.6.5/lib/python3.6/:/usr/local/python3.6.5/lib/python3.6/site-packages/" >> /etc/profile
 	source /etc/profile
 	V3=`python3 -V | awk '{print $2}'`
 	echo "Python Version: $V3 "
