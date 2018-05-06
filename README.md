@@ -1,7 +1,7 @@
 # Install-Python3-Bash
 Centos6/7  一键安装Python3脚本
 
-安装Python3版本: 由 3.4.1 改为3.5.3
+安装Python3版本: 由 3.5.3 改为 3.6.5
 
 ## 下载
 ```bash
